@@ -1,0 +1,26 @@
+.customSelect {
+   select{
+     width: 100%;
+     padding: 20px 10px;
+     font-size: 1rem;
+     color: #1C2746;
+     font-weight: 500;
+   }
+ }
+.customSelect2 {
+  select{
+    display: none;
+    width: 100%;
+    padding: 20px 10px;
+    font-size: 1rem;
+    color: #1C2746;
+    font-weight: 500;
+  }
+}
+@media(max-width: 700px) {
+  .customSelect2{
+    select{
+      display: block;
+    }
+  }
+}

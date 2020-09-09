@@ -1,0 +1,118 @@
+$color:#1C2746;
+
+.header{
+    display: flex;
+    padding: 10px 5%;
+    .header_block1{
+        width: 25%;
+        .header_text{
+            color: $color;
+            font-size: 3.5rem;
+        }
+        .header_sub_text{
+            color: $color;
+            font-weight: normal;
+            letter-spacing: 0.1em;
+            font-size: 1rem;
+        }
+        .header_btn{
+            display: flex;
+            border: 2px solid red;
+            color: red;
+            font-weight: 600;
+            justify-content: center;
+            font-size: 1.2rem;
+            padding: 20px 0;
+            margin-top: 10%;
+            width: 60%;
+            &:hover{
+                background-color: red;
+                color: white;
+                cursor: pointer;
+                transition: 0.6s;
+            }
+        }
+    }
+    .header_block2{
+        position: relative;
+        width: 75%;
+        .header_block2_content{
+            position: absolute;
+            bottom: 10%;
+            right: 15%;
+            font-size: 1.3rem;
+            color: $color;
+            letter-spacing: 0.1rem;
+            .dots_container{
+                line-height: 14px;
+                .dots{
+                    font-size: 1.5rem;
+                    letter-spacing: 0.7rem;
+                    color: red;
+                    font-weight: bold;
+                }
+            }
+            .header_block2_sub_block{
+                display: flex;
+                .dots_container2{
+                    line-height: 14px;
+                    font-size: 1.5rem;
+                    letter-spacing: 0.7rem;
+                    color: red;
+                    font-weight: bold;
+                }
+                .header_block2_sub_text{
+                    font-size: 2rem;
+                    .header_block2_sub_text_span{
+                        color:red
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width: 700px) {
+    .header{
+        padding: 10px;
+        display: block;
+        .header_block1{
+            width: 100%;
+            .header_sub_text{
+                font-size: 1.1rem;
+            }
+            .header_btn{
+                margin-top: 10%;
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        .header_block2{
+            width: 100%;
+            height: 300px;
+            .header_block2_content{
+                position: unset;
+                .dots_container{
+                    line-height: 20px;
+                    .dots{
+                        font-size: 2rem;
+                        letter-spacing: 0.5rem;
+                        font-weight: bold;
+                        color: red;
+                    }
+                }
+                .header_block2_sub_block{
+                    display: flex;
+                    .dots_container2{
+                        display: none;
+                    }
+                    .header_block2_sub_text{
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
